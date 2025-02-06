@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "f870f9d3f16d62ea129036da2b22e3c3",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-02-03T14:00:00",
+    "end": "2025-02-03T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "eef8cd5594e7e5c664fba7cd12d7b70e",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-02-04T10:00:00",
+    "end": "2025-02-04T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "79695acdad49317cb321858150296beb",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "VIA.01.05",
+    "start": "2025-02-04T13:00:00",
+    "end": "2025-02-04T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "4cbc1670b01085873905364d299829c0",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-02-05T10:00:00",
+    "end": "2025-02-05T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "d04e5ebf051ff86fc372118d29cd825a",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-02-05T14:00:00",
+    "end": "2025-02-05T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "c4d507fce7d10a7e12192c940c727e0c",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.13",
+    "start": "2025-02-06T09:00:00",
+    "end": "2025-02-06T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "c4002ef8e6641a9fb323969d923b0d9f",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.13",
+    "start": "2025-02-06T14:00:00",
+    "end": "2025-02-06T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "1a47ec679e0f7d6ea6317458ae68da5d",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-02-10T14:00:00",
+    "end": "2025-02-10T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "1da5fcb77d35338d5c10f13636a203b2",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-02-11T10:00:00",
+    "end": "2025-02-11T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "871773464856711b9521f2ce857a0bde",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.07",
+    "start": "2025-02-11T13:00:00",
+    "end": "2025-02-11T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "c8b9a887e4260782bc920d77d2ff9e71",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.12",
+    "start": "2025-02-12T10:00:00",
+    "end": "2025-02-12T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "d70155b6c9fb4279ecfed40a11afe91d",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-02-12T14:00:00",
+    "end": "2025-02-12T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "3565f0aabffd0f4be60c570b0397e379",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.05",
+    "start": "2025-02-13T09:00:00",
+    "end": "2025-02-13T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a3de58b06692d002e643a1cb86910420",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.021",
+    "start": "2025-02-13T14:00:00",
+    "end": "2025-02-13T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "e0c674c90c81cef4131039d959763b55",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-02-17T14:00:00",
+    "end": "2025-02-17T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "b350c7172518a40f7167b176aaa43e20",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-02-18T10:00:00",
+    "end": "2025-02-18T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "5bcb1b9a94b909751504d989526ae0a0",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.-01.021",
+    "start": "2025-02-18T13:00:00",
+    "end": "2025-02-18T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "53251b451d77243103b223683da0b8e9",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "VIA.01.11",
+    "start": "2025-02-19T10:00:00",
+    "end": "2025-02-19T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "9b47c832331f5df157f54419520bc248",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-02-19T14:00:00",
+    "end": "2025-02-19T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "fac8b2d36e9617b6973dd3a9ac05427b",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.09",
+    "start": "2025-02-20T09:00:00",
+    "end": "2025-02-20T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "2c529052711bc4dd0446e8b8ff02b90a",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.019",
+    "start": "2025-02-20T14:00:00",
+    "end": "2025-02-20T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "67d875e2278473db570457a824757a61",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-02-24T14:00:00",
+    "end": "2025-02-24T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "67d875e2278473db570457a824757a61",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-02-24T14:00:00",
+    "end": "2025-02-24T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a4634f4a2df9082d03c61fc980b25c48",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-02-25T10:00:00",
+    "end": "2025-02-25T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a4634f4a2df9082d03c61fc980b25c48",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-02-25T10:00:00",
+    "end": "2025-02-25T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "be5398003a0fa8602b374807ee651db4",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "VIA.00.06",
+    "start": "2025-02-25T13:00:00",
+    "end": "2025-02-25T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "be5398003a0fa8602b374807ee651db4",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "VIA.00.06",
+    "start": "2025-02-25T13:00:00",
+    "end": "2025-02-25T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "27a19fe4ab78169bfa401e49da2d68d9",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.02.01",
+    "start": "2025-02-26T10:00:00",
+    "end": "2025-02-26T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "27a19fe4ab78169bfa401e49da2d68d9",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.02.01",
+    "start": "2025-02-26T10:00:00",
+    "end": "2025-02-26T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "f11bb8d4609245f621f20d98b878e4b9",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-02-26T14:00:00",
+    "end": "2025-02-26T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "f11bb8d4609245f621f20d98b878e4b9",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-02-26T14:00:00",
+    "end": "2025-02-26T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "fce6dc79a97b336ca4f702b8d4541be4",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.09",
+    "start": "2025-02-27T09:00:00",
+    "end": "2025-02-27T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "fce6dc79a97b336ca4f702b8d4541be4",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.09",
+    "start": "2025-02-27T09:00:00",
+    "end": "2025-02-27T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ec7efe0a03747283615f2bc11c2a35ff",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.021",
+    "start": "2025-02-27T14:00:00",
+    "end": "2025-02-27T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ec7efe0a03747283615f2bc11c2a35ff",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.021",
+    "start": "2025-02-27T14:00:00",
+    "end": "2025-02-27T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "76677adbaad22a3a7b77206ae404e186",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-03-10T14:00:00",
+    "end": "2025-03-10T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "aa472de9d767b087965cd0fd817279e6",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-03-11T10:00:00",
+    "end": "2025-03-11T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ed4da9306bd4d4077849439a62ffef0b",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.-01.020",
+    "start": "2025-03-11T13:00:00",
+    "end": "2025-03-11T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "3e73a65ae54fb6cbc5e03f45f7ae6d6c",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-03-12T10:00:00",
+    "end": "2025-03-12T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "1cd3e9ae827d8c428b937399ad336cda",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-03-12T14:00:00",
+    "end": "2025-03-12T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "98af90c6e203b15f40f2a4e946a97f03",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.05",
+    "start": "2025-03-13T09:00:00",
+    "end": "2025-03-13T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "8ee09eb765fae9ed83bc98e49c0f84e1",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "WT1.FICT.LES",
+    "start": "2025-03-13T14:00:00",
+    "end": "2025-03-13T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "29a2feaeb328a2c59319ea5d62575f3d",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-03-17T14:00:00",
+    "end": "2025-03-17T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "50ed9fcdd186ecdb71e86bd7116ec7c3",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-03-18T10:00:00",
+    "end": "2025-03-18T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "f77b4f18dc51b8c53d0a3b9254c3213e",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "VIA.01.11",
+    "start": "2025-03-18T13:00:00",
+    "end": "2025-03-18T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "eae9cdb19a1b021bcb253f088aeeb143",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-03-19T10:00:00",
+    "end": "2025-03-19T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "182cfeb9fb2d68821ca552881b2d1821",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-03-19T14:00:00",
+    "end": "2025-03-19T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "d3297df9894c262e84a3d840920493b2",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.05",
+    "start": "2025-03-20T09:00:00",
+    "end": "2025-03-20T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "e913084d607052c9484b6f20596c961c",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "VIA.01.07",
+    "start": "2025-03-20T14:00:00",
+    "end": "2025-03-20T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "517255fd270807465f041ea508dd5f9c",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-03-31T14:00:00",
+    "end": "2025-03-31T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "517255fd270807465f041ea508dd5f9c",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-03-31T14:00:00",
+    "end": "2025-03-31T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "609e88959f2bc15db0247ac50d62f673",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-04-01T10:00:00",
+    "end": "2025-04-01T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "609e88959f2bc15db0247ac50d62f673",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-04-01T10:00:00",
+    "end": "2025-04-01T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "460a6cb66c453f8a7f204da29f199a38",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.04",
+    "start": "2025-04-01T13:00:00",
+    "end": "2025-04-01T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "460a6cb66c453f8a7f204da29f199a38",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.04",
+    "start": "2025-04-01T13:00:00",
+    "end": "2025-04-01T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "2a1788f013e9023b9b32c7ff3756b1f1",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-04-02T10:00:00",
+    "end": "2025-04-02T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "2a1788f013e9023b9b32c7ff3756b1f1",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-04-02T10:00:00",
+    "end": "2025-04-02T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "7badc3c0509cc78bd76bebc99f7549ec",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-04-02T14:00:00",
+    "end": "2025-04-02T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "7badc3c0509cc78bd76bebc99f7549ec",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-04-02T14:00:00",
+    "end": "2025-04-02T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a03c2c7bc5d0454edef14d066bb77460",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.05",
+    "start": "2025-04-03T09:00:00",
+    "end": "2025-04-03T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a03c2c7bc5d0454edef14d066bb77460",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.05",
+    "start": "2025-04-03T09:00:00",
+    "end": "2025-04-03T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "808db82964b687cd7785edd1b9b9f395",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.008",
+    "start": "2025-04-03T14:00:00",
+    "end": "2025-04-03T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "808db82964b687cd7785edd1b9b9f395",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.008",
+    "start": "2025-04-03T14:00:00",
+    "end": "2025-04-03T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "9109be224153f2d96da64329c797b929",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-04-22T10:00:00",
+    "end": "2025-04-22T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a058cf316b6e5aa406e4725a49214251",
+    "title": "Infosessie eerstejaars dag",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.02.03",
+    "start": "2025-04-22T12:00:00",
+    "end": "2025-04-22T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "79d1e55aeffb629db7ef3c77fc60335f",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.07",
+    "start": "2025-04-22T13:00:00",
+    "end": "2025-04-22T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "4a4d2ff4089f3c562556990fa3d20d2e",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-04-23T10:00:00",
+    "end": "2025-04-23T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ac5995ef8e13574714ae2157672bbbfd",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-04-23T14:00:00",
+    "end": "2025-04-23T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "e058e31a2dd6fcf42e520fa5e574a6bf",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.09",
+    "start": "2025-04-24T09:00:00",
+    "end": "2025-04-24T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "b0a12a83c29cd8e0623e725dd2a67721",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.019",
+    "start": "2025-04-24T14:00:00",
+    "end": "2025-04-24T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "6d45e29759d0894b598e3999f53bbe0f",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-04-28T14:00:00",
+    "end": "2025-04-28T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "6d45e29759d0894b598e3999f53bbe0f",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-04-28T14:00:00",
+    "end": "2025-04-28T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "3a09cc4e59ed673025429669e83494b6",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-04-29T10:00:00",
+    "end": "2025-04-29T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "3a09cc4e59ed673025429669e83494b6",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-04-29T10:00:00",
+    "end": "2025-04-29T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "78aa2b91ed4c6444576f54b472f1b9e6",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "VIA.01.07",
+    "start": "2025-04-29T13:00:00",
+    "end": "2025-04-29T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "78aa2b91ed4c6444576f54b472f1b9e6",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "VIA.01.07",
+    "start": "2025-04-29T13:00:00",
+    "end": "2025-04-29T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a521633338d7e355194f3c305c8dbc95",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-04-30T10:00:00",
+    "end": "2025-04-30T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a521633338d7e355194f3c305c8dbc95",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-04-30T10:00:00",
+    "end": "2025-04-30T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "da3b8c75c35d156f86a2491a8d78eb06",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-04-30T14:00:00",
+    "end": "2025-04-30T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "da3b8c75c35d156f86a2491a8d78eb06",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-04-30T14:00:00",
+    "end": "2025-04-30T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "8e1277ff64c828465c322da460e9e309",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-05-05T14:00:00",
+    "end": "2025-05-05T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "9d9ba13bcc735b75c36b9951d3f75d07",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-05-06T10:00:00",
+    "end": "2025-05-06T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "24a610dbf5f63f648abe8a2de6337892",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.01.104",
+    "start": "2025-05-06T13:00:00",
+    "end": "2025-05-06T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "3a76d75e89390af6c7108aee092474dc",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-05-07T10:00:00",
+    "end": "2025-05-07T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "d75a1f1b142d19665160eefff3d669ef",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-05-07T14:00:00",
+    "end": "2025-05-07T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "662f1a8982e7253e1afbbf996d5bfd93",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.-01.006",
+    "start": "2025-05-08T09:00:00",
+    "end": "2025-05-08T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "fbf5c62df938bf93ad585da280fef156",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.019",
+    "start": "2025-05-08T14:00:00",
+    "end": "2025-05-08T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "4faf7c71c13285104bdca27292acf276",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-05-12T14:00:00",
+    "end": "2025-05-12T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "022893700d668d2a5419380cea81f8f8",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-05-13T10:00:00",
+    "end": "2025-05-13T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a2163bb5f432e8e8fb2b78b911e31a9e",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.01.104",
+    "start": "2025-05-13T13:00:00",
+    "end": "2025-05-13T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "085eee94912b479718118e06b8751f0e",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-05-14T10:00:00",
+    "end": "2025-05-14T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "e36e5d783c6be6a206d8f42b299f31bd",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-05-14T14:00:00",
+    "end": "2025-05-14T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "9a6461444f9112e5537124794bbf2753",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.09",
+    "start": "2025-05-15T09:00:00",
+    "end": "2025-05-15T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "85e736f1191dabed74f02593c7919469",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.05",
+    "start": "2025-05-15T14:00:00",
+    "end": "2025-05-15T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "448130a52f83ff38c3901cecb8e3453b",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-05-19T14:00:00",
+    "end": "2025-05-19T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "a6ead7f307f1c06e1c0c473eeb8f0263",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-05-20T10:00:00",
+    "end": "2025-05-20T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "f9c0db6accee9cd57de255677b33cc62",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.01.104",
+    "start": "2025-05-20T13:00:00",
+    "end": "2025-05-20T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "44fb3b2ca509e49d7ebabe5bedff02b2",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-05-21T10:00:00",
+    "end": "2025-05-21T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "c06b2e7991c781dee5c8b96331c0f967",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-05-21T14:00:00",
+    "end": "2025-05-21T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ba5f7561672339bf34495982510c4da6",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "ELL.03.09",
+    "start": "2025-05-22T09:00:00",
+    "end": "2025-05-22T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "0c2a0c79589af647599dd03da1934856",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "NOO.-01.019",
+    "start": "2025-05-22T14:00:00",
+    "end": "2025-05-22T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "d7f89c5f176885765e06909a4ce540f5",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-05-26T14:00:00",
+    "end": "2025-05-26T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "d7f89c5f176885765e06909a4ce540f5",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.06",
+    "start": "2025-05-26T14:00:00",
+    "end": "2025-05-26T17:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "17462d9d589bc9b6955ec6f2d94025ec",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-05-27T10:00:00",
+    "end": "2025-05-27T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "17462d9d589bc9b6955ec6f2d94025ec",
+    "title": "Cloudsystemen",
+    "teacher": "Glenn Van Loon",
+    "location": "ELL.03.06",
+    "start": "2025-05-27T10:00:00",
+    "end": "2025-05-27T12:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "2635216d52e14780bb7a556382481e36",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.01.104",
+    "start": "2025-05-27T13:00:00",
+    "end": "2025-05-27T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "2635216d52e14780bb7a556382481e36",
+    "title": "OO programmeren",
+    "teacher": "Vincent Van Camp",
+    "location": "NOO.01.104",
+    "start": "2025-05-27T13:00:00",
+    "end": "2025-05-27T16:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "c90cff2a8b57dcaa1be9a9dc3cfbc749",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-05-28T10:00:00",
+    "end": "2025-05-28T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "c90cff2a8b57dcaa1be9a9dc3cfbc749",
+    "title": "Webontwikkeling",
+    "teacher": "Andie Similon",
+    "location": "ELL.03.07",
+    "start": "2025-05-28T10:00:00",
+    "end": "2025-05-28T13:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ff1ed887c4562496036eba25db71ee88",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-05-28T14:00:00",
+    "end": "2025-05-28T18:00:00",
+    "color": "#232226"
+  },
+  {
+    "id": "ff1ed887c4562496036eba25db71ee88",
+    "title": "WPL exploratie & project",
+    "teacher": "Barbara Lettany",
+    "location": "ELL.01.07",
+    "start": "2025-05-28T14:00:00",
+    "end": "2025-05-28T18:00:00",
+    "color": "#232226"
+  }
+]
