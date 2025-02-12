@@ -2,10 +2,10 @@
 
 "Als gebruiker wil ik"
 
-- tijdens interacties met events een popup form hebben met de gegevens van mijn event
-- dat elk schermpje of elke interactie moet een exit strategy hebben , vb een kruisje om te sluiten
+- een dag overzicht
+- een week overzicht
+- een maand overzicht
 - events toevoegen aan mijn kalender
-- kunnen instellen wat een standaard starttijd is voor een event als suggestie bij het aanmaken van een event
 - events verwijderen van mijn kalender
 - de titel van mijn event kunnen aanpassen
 - de beschrijving van mijn event kunnen aanpassen
@@ -13,24 +13,26 @@
 - de datum van een event aanpassen
 - een event kunnen verplaatsen van dag door het te slepen naar de gewenste dag
 - een kleuren code kunnen toevoegen aan een event
-- een optie hebben om een event een hele dag te laten plaatsvinden
-- een overzicht hebben van de events op een dag/week/maand (chronologisch)
-- prioriteiten toevoegen aan bepaalde events
 - bepaalde kleurencodes koppelen aan bepaalde vakken/deadlines
-- meerdere agendas hebben
-- icl import/export functie hebben voor manueel mijn kalender te delen/uploaden/updaten
-- een dag overzicht
-- een week overzicht
-- een maand overzicht
+- een optie hebben om een event een hele dag te laten plaatsvinden
+- een pagina zonder kalender waar al de events chronologisch weergegeven worden 
+
 - een popup minikalender om te navigeren tussen dagen/weken/maanden
-- een navigatie optie (suggestie pijlen) om naar vorige of volgende pagina te gaan
-- een pagina zonder kalender waar al de events chronologisch weergegeven worden
+- dat elk schermpje of elke interactie moet een exit strategy hebben , vb een kruisje om te sluiten
+- tijdens interacties met events een popup form hebben met de gegevens van mijn event
+- kunnen instellen wat een standaard starttijd is voor een event als suggestie bij het aanmaken van een event
+- dat ik geen dubbele events heb.
 - filter mogelijkheden op agenda overzichten
+- meerdere agendas hebben
+- een navigatie optie (suggestie pijlen) om naar vorige of volgende pagina te gaan
+
+- prioriteiten toevoegen aan bepaalde events
+- icl import/export functie hebben voor manueel mijn kalender te delen/uploaden/updaten
+
 - tijdslots vastzetten waarin ik productief wil zijn maar nog niet concreet een planning heb
 - op een overzicht van niet ingeplande agendapunten,
   de mogelijkheid hebben om een topic toe te wijzen aan een leeg tijdslot dat is ingepland als productief slot
 - wanneer ik een topic koppel aan een tijdslot, deze meteen de titel en de description invuld zodat ik enkel het tijdslot moet kiezen.
-- dat ik geen dubbele events heb.
 - een melding krijgen als een event overlapt met een ander event.
 
 "als developer wil ik"
