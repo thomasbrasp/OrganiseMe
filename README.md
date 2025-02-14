@@ -1,29 +1,34 @@
 # OrganiseMe
 
+# drupal (stackexchange) bekijken voor SSESS
+# 
+
 "Als gebruiker wil ik"
 
-- een dag overzicht
-- een week overzicht
-- een maand overzicht
-- events toevoegen aan mijn kalender
-- events verwijderen van mijn kalender
-- de titel van mijn event kunnen aanpassen
-- de beschrijving van mijn event kunnen aanpassen
-- de tijd van mijn event kunnen aanpassen
-- de datum van een event aanpassen
-- een event kunnen verplaatsen van dag door het te slepen naar de gewenste dag
-- een kleuren code kunnen toevoegen aan een event
-- bepaalde kleurencodes koppelen aan bepaalde vakken/deadlines
+- ~~een dag overzicht~~
+- ~~een week overzicht~~
+- ~~een maand overzicht~~
+- ~~events toevoegen aan mijn kalender~~
+- ~~events verwijderen van mijn kalender~~
+- ~~de titel van mijn event kunnen aanpassen~~
+- ~~de beschrijving van mijn event kunnen aanpassen~~
+- ~~de tijd van mijn event kunnen aanpassen~~
+- ~~de datum van een event aanpassen~~
+- ~~een kleuren code kunnen toevoegen aan een event~~
+- ~~bepaalde kleurencodes koppelen aan bepaalde vakken/deadlines~~
+- ~~een popup minikalender om te navigeren tussen dagen/weken/maanden~~
+- ~~dat elk schermpje of elke interactie moet een exit strategy hebben , vb een kruisje om te sluiten~~
+- 
+- ~~een event kunnen verplaatsen van dag door het te slepen naar de gewenste dag~~
 - een optie hebben om een event een hele dag te laten plaatsvinden
 - een pagina zonder kalender waar al de events chronologisch weergegeven worden 
 
-- een popup minikalender om te navigeren tussen dagen/weken/maanden
-- dat elk schermpje of elke interactie moet een exit strategy hebben , vb een kruisje om te sluiten
 - tijdens interacties met events een popup form hebben met de gegevens van mijn event
 - kunnen instellen wat een standaard starttijd is voor een event als suggestie bij het aanmaken van een event
 - dat ik geen dubbele events heb.
 - filter mogelijkheden op agenda overzichten
-- meerdere agendas hebben
+- agenda toevoegen
+- agenda's aan of uit togglen
 - een navigatie optie (suggestie pijlen) om naar vorige of volgende pagina te gaan
 
 - prioriteiten toevoegen aan bepaalde events

@@ -83,7 +83,7 @@ const fetchAllSchedules = async (res) => {
         const headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            "Cookie": "SSESSa871973c0cd6049896447a5dd7c92d4f=xGksdqoR966O6X6muoGHiSjKKOlQNgbPefNJG85wmyvPWbtT",
+            "Cookie": "SSESSa871973c0cd6049896447a5dd7c92d4f=nqb%2CKfB3atQkUVWTyR7%2CvWJI34t%2C9DYw0RUaMzSIgjFDKQal",
             "Origin": "https://student.ap.be",
             "Referer": "https://student.ap.be/events",
             "Sec-Fetch-Dest": "empty",
