@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Test event pupup</title>
+  </head>
+  <body>
+    <div class="event-pop-up">
+      <button class="">X</button>
+      <div class="container">
+        <form action="">
+          <!-- Event title -->
+          <div>
+            <label for="">Event title</label>
+            <input type="text" />
+          </div>
+          <!-- Event description -->
+          <div>
+            <label for="description">Event description </label>
+            <input type="text" name="description" size="25" maxlength="30" />
+            <div class="subtext">max 30 characters*</div>
+          </div>
+          <!-- Date picker -->
+          <div>
+            <label for="datetime-local"></label>
+            <input type="datetime-local" name="Event datum" id="DateTime" />
+          </div>
+          <!-- From-To-Time selector -->
+          <div>
+            <label for="">From</label>
+            <label for="">From</label>
+          </div>
+          <!-- Event urgency picker -->
+          <div>
+            <label for="Event-Urgency">Event Urgency</label>
+            <select name="Event-Urgency" id="Event-Urgency">
+              <option value="Urgent">Urgent</option>
+
+              <option value="Mildly-Urgent">Mildly urgent</option>
+
+              <option value="Not-Urgent">Not urgent</option>
+            </select>
+          </div>
+          <!-- Event color picker -->
+          <div>
+            <div class="color-options">
+              <div class="title">Choose an event</div>
+              <select name="" id="">
+                <option value="Deadline">Deadline</option>
+                <option value="Exam">Exam</option>
+                <option value="Study">Study session</option>
+                <option value="Class">Class</option>
+              </select>
+            </div>
+            <input type="hidden" name="selected-color" id="selected-color" />
+            <!-- <option value="Red">Red</option>
+
+              <option value="Green">Green</option>
+
+              <option value="Blue">Blue</option>
+              <option value="Purple">Purple</option>
+              <option value="Orange">Orange</option> -->
+          </div>
+          <!-- Email Notification -->
+          <div>
+            <label for="E-mail">Get a notification</label>
+            <input type="email" name="E-mail" />
+          </div>
+          <button>Save Event</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

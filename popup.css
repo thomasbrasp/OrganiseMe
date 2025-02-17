@@ -1,0 +1,25 @@
+/* standaard niet op urgent zetten
+geen kleurecodes -> drop down menu 
+titel moet boven description
+verwijder get notification (idee bewaren) zet hier description in de plaats
+typen voor begin uur en eind uur en dan datum selecteren */
+
+.event-pop-up {
+  background-color: #212124;
+  border: 2px solid #0c41ff;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 350px;
+  min-width: 150px;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5073f1;
+  display: block;
+}
+.subtext {
+  font-size: 0.5rem;
+  color: #5073f1;
+}
+/* #0c41ff */
+/* #212124 */
