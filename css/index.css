@@ -1,10 +1,105 @@
-:root {
 
+:root {
+    --primary-color: #007BFF;
+    --primary-hover-color: #0056b3;
+    --text-color: #333;
+    --background-light: #f7f7f7;
+    --background-lighter: #f9f9f9;
+    --border-color: #ddd;
+    --shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    --font-family-base: Arial, sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+    --font-size-medium: 20px;
+    --font-size-small: 16px;
+    --padding-small: 10px 15px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+    --border-radius: 5px;
+    --transition-ease: background-color 0.3s ease;
 }
+
 * {
     box-sizing: border-box;
 }
-button{
-    cursor: pointer;
 
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: var(--transition-ease);
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-large);
+    background-color: var(--background-light);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+header a {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 15px; /* Optional to convert to a variable */
+}
+
+main {
+    padding: var(--padding-large);
+}
+
+section#upcoming-events {
+    border: 1px solid var(--border-color);
+    padding: var(--padding-medium);
+    border-radius: var(--border-radius);
+    background-color: var(--background-lighter);
+    box-shadow: var(--shadow);
+}
+
+section#upcoming-events h2 {
+    margin-top: 0;
+    font-size: var(--font-size-medium);
+}
+
+section#upcoming-events p {
+    font-size: var(--font-size-small);
+    color: #666; /* Optional to convert to variable */
 }
