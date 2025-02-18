@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="dayview.css">
 <head>
     <meta charset="UTF-8">
-    <title>OrganiseMe</title>
-    <script src="../scripts/JsonParser.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day View Calendar</title>
+    <link rel="stylesheet" href="dayview.css">
 </head>
 <body>
-<section class="header-calendar">
-    <button id="dropdown_btn"><img src="../images/dropdown_icon.jpg" alt="dropdown menu"></button>
-    <div id="day">day</div>
-    <button id="dropdown_calendar"><img src="../images/search_icon.png" alt="search"></button>
-    <button id="add_event">add event</button>
-</section>
+<div class="container">
+    <!-- Top Bar -->
+    <div class="calendar_header">
+        <h2>12 Februari 2025</h2>
+        <div class="controls">
+            <select>
+                <option>day</option>
+                <option>week</option>
+                <option>month</option>
+            </select>
+            <input type="text" placeholder="🔍">
+            <button class="add-event">Event Toevoegen</button>
+        </div>
+    </div>
 
+    <!-- Calendar -->
+    <div class="calendar">
+        <div class="hours">
+            <!-- Generate hour labels -->
+            <div class="hour">01</div>
+            <div class="hour">02</div>
+            <div class="hour">03</div>
+            <div class="hour">04</div>
+            <div class="hour">05</div>
+            <div class="hour">06</div>
+            <div class="hour">07</div>
+            <div class="hour">08</div>
+            <div class="hour">09</div>
+            <div class="hour">10</div>
+            <div class="hour">11</div>
+            <div class="hour">12</div>
+            <div class="hour">13</div>
+            <div class="hour">14</div>
+            <div class="hour">15</div>
+            <div class="hour">16</div>
+            <div class="hour">17</div>
+            <div class="hour">18</div>
+            <div class="hour">19</div>
+            <div class="hour">20</div>
+            <div class="hour">21</div>
+            <div class="hour">22</div>
+            <div class="hour">23</div>
+        </div>
+
+        <div class="events">
+            <!-- Example events -->
+            <div class="event event-green" style="top: 9.5em; height: 9em;">Les OO Programmeren</div>
+            <div class="event event-purple" style="top: 11.5em; height: 2em;">Zwembad</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
