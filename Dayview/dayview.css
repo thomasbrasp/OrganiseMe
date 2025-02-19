@@ -22,7 +22,6 @@ TODO: */
     --control-border: #ccc;
 
     /* Text Colors */
-    --text-primary: black;
     --text-secondary: white;
     --hour-text: #000;
 
@@ -31,17 +30,12 @@ TODO: */
     --button-hover-bg: #0056b3;
 
     /* Spacing */
-    --spacing-xs: 2px;
     --spacing-sm: 5px;
     --spacing-md: 10px;
     --spacing-lg: 15px;
-    --spacing-xl: 20px;
-    --spacing-2xl: 30px;
-    --spacing-3xl: 40px;
 
     /* Border Radius */
     --radius-sm: 5px;
-    --radius-md: 10px;
     --radius-lg: 15px;
 
     /* Font Sizes */
