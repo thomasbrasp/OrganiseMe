@@ -4,7 +4,11 @@
 - desktop start met month overview? 
 - indien wel maandelijks op mobile, compact houden, met enkel indicatie grijze bol voor event
 --> klikken toggled de details van die dag ?
-- 
+- font kiezen
+- namingconventions
+- eerste opdrachten mergen en nieuwe verdelen
+- dailystandup inplannen
+- duidelijke mappenstructuur uitleggen/afspreken
 
 # drupal (stackexchange) bekijken voor SSESS
 
