@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* TODO: Fixed height and width for events so all days are the same size */
+/* TODO: Sidebar should be toggleable in the future */
+
 :root {
   --font-family: "Poppins", sans-serif;
   --bg-color: #ffffff;
@@ -25,11 +28,18 @@ body {
   padding: 0;
   background: var(--bg-color);
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  height: 90vh;
+  width: 90vw;
+  max-width: 1200px;
 }
 
 .sidebar {
@@ -37,6 +47,7 @@ body {
   background: var(--bg-color);
   padding: var(--padding-large);
   border-right: 1px solid var(--border-color);
+  overflow-y: auto;
 }
 
 .mini-calendar h3 {
@@ -69,6 +80,10 @@ td {
   font-size: 14px;
   font-weight: var(--font-weight-medium);
   color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .purple {
@@ -82,6 +97,8 @@ td {
 .calendar {
   flex: 1;
   padding: var(--padding-large);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -119,14 +136,22 @@ select {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: var(--padding-small);
+  flex-grow: 1;
+  max-height: calc(100% - 50px);
 }
 
 .day {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   border: 1px solid var(--border-color);
   position: relative;
   font-weight: var(--font-weight-medium);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .day.event {
@@ -134,4 +159,53 @@ select {
   color: black;
   border-radius: var(--border-radius);
   padding: var(--padding-medium);
+}
+
+.day .event-title {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+  }
+
+  .day {
+    min-height: 60px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+  }
+
+  .day {
+    min-height: 50px;
+    font-size: 10px;
+    padding: var(--padding-small);
+  }
+
+  .add-event {
+    padding: var(--padding-small) var(--padding-medium);
+  }
+
+  select {
+    padding: var(--padding-small);
+  }
 }
