@@ -1,39 +1,52 @@
-# OrganiseMe
+# OrganiseMe (brainstorm)
+- month overview enkel voor desktop ? 
+- lijst met toekomstige events als main met navigatie naar calendars ? (mobile)
+- desktop start met month overview? 
+- indien wel maandelijks op mobile, compact houden, met enkel indicatie grijze bol voor event
+--> klikken toggled de details van die dag ?
+- font kiezen
+- namingconventions
+- eerste opdrachten mergen en nieuwe verdelen
+- dailystandup inplannen
+- duidelijke mappenstructuur uitleggen/afspreken
 
-"Als gebruiker wil ik"
+# drupal (stackexchange) bekijken voor SSESS
 
-- tijdens interacties met events een popup form hebben met de gegevens van mijn event
-- dat elk schermpje of elke interactie moet een exit strategy hebben , vb een kruisje om te sluiten
+
+# "Als gebruiker wil ik"
+
+- een dag overzicht
+- een week overzicht
+- een maand overzicht
 - events toevoegen aan mijn kalender
-- kunnen instellen wat een standaard starttijd is voor een event als suggestie bij het aanmaken van een event
 - events verwijderen van mijn kalender
 - de titel van mijn event kunnen aanpassen
 - de beschrijving van mijn event kunnen aanpassen
 - de tijd van mijn event kunnen aanpassen
 - de datum van een event aanpassen
-- een event kunnen verplaatsen van dag door het te slepen naar de gewenste dag
 - een kleuren code kunnen toevoegen aan een event
-- een optie hebben om een event een hele dag te laten plaatsvinden
-- een overzicht hebben van de events op een dag/week/maand (chronologisch)
-- prioriteiten toevoegen aan bepaalde events
 - bepaalde kleurencodes koppelen aan bepaalde vakken/deadlines
-- meerdere agendas hebben
-- icl import/export functie hebben voor manueel mijn kalender te delen/uploaden/updaten
-- een dag overzicht
-- een week overzicht
-- een maand overzicht
 - een popup minikalender om te navigeren tussen dagen/weken/maanden
-- een navigatie optie (suggestie pijlen) om naar vorige of volgende pagina te gaan
+- dat elk schermpje of elke interactie moet een exit strategy hebben , vb een kruisje om te sluiten
+- een event kunnen verplaatsen van dag door het te slepen naar de gewenste dag
+- een optie hebben om een event een hele dag te laten plaatsvinden
 - een pagina zonder kalender waar al de events chronologisch weergegeven worden
+- tijdens interacties met events een popup form hebben met de gegevens van mijn event
+- kunnen instellen wat een standaard starttijd is voor een event als suggestie bij het aanmaken van een event
+- dat ik geen dubbele events heb.
 - filter mogelijkheden op agenda overzichten
+- agenda toevoegen
+- agenda's aan of uit togglen
+- een navigatie optie (suggestie pijlen) om naar vorige of volgende pagina te gaan
+- prioriteiten toevoegen aan bepaalde events
+- icl import/export functie hebben voor manueel mijn kalender te delen/uploaden/updaten
 - tijdslots vastzetten waarin ik productief wil zijn maar nog niet concreet een planning heb
 - op een overzicht van niet ingeplande agendapunten,
   de mogelijkheid hebben om een topic toe te wijzen aan een leeg tijdslot dat is ingepland als productief slot
 - wanneer ik een topic koppel aan een tijdslot, deze meteen de titel en de description invuld zodat ik enkel het tijdslot moet kiezen.
-- dat ik geen dubbele events heb.
 - een melding krijgen als een event overlapt met een ander event.
 
-"als developer wil ik"
+# "als developer wil ik"
 
 - wanneer een gebruiker een interactie niet volledig of juist voltooid, deze de hele actie annuleert
 - tijdens de opdracht van een event bij te wonen proberen netwerken of nieuwe inzichten te krijgen omtrent ons project. eventueel tips.

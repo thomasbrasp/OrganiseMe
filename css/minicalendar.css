@@ -1,0 +1,66 @@
+
+:root {
+    --font-family: Arial, sans-serif;
+    --bg-color: #f8f8f8;
+    --card-bg-color: white;
+    --card-padding: 10px;
+    --card-border-radius: 8px;
+    --card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    --text-color: red;
+    --font-size: 18px;
+    --table-width: 100%;
+    --table-cell-height: 30px;
+    --cell-width: 15%;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.calendar {
+    width: 250px;
+    background: var(--card-bg-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size);
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 5px 0;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+
+table {
+    width: var(--table-width);
+    border-collapse: collapse;
+}
+
+th, td {
+    width: var(--cell-width);
+    height: var(--table-cell-height);
+    text-align: center;
+}
+
+.today {
+    color: var(--text-color);
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+}

@@ -20,7 +20,7 @@ const parseDescription = (description) => {
 
 // Go up one level from 'scripts/' and into 'data/'
 const filePath = path.resolve(__dirname, "../data/scheduleData.json");
-const outputFilePath = path.resolve(__dirname, "../data/refactored.json");
+const outputFilePath = path.resolve(__dirname, "../data/transformed.json");
 
 console.log("Reading from:", filePath);
 console.log("Saving to:", outputFilePath);
@@ -60,7 +60,7 @@ const transformScheduleData = () => {
         // Save transformed and sorted data back to a new JSON file
         fs.writeFileSync(outputFilePath, JSON.stringify(transformedData, null, 2), "utf-8");
 
-        console.log("Transformed data saved successfully in refactored.json");
+        console.log("Transformed data saved successfully in transformed.json");
     } catch (error) {
         console.error("Error processing schedule data:", error.message);
     }
