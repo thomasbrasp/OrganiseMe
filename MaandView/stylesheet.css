@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/*
+TODO: css omzetten met variables
+TODO: fixed height en width op events zodat alle dagen even groot zijn (met of zonder event)
+TODO: naar toekomst toe moet de sidebar togglebaar zijn*/
+
+
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
