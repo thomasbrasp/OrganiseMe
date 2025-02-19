@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/*
-TODO: css omzetten met variables
-TODO: fixed height en width op events zodat alle dagen even groot zijn (met of zonder event)
-TODO: naar toekomst toe moet de sidebar togglebaar zijn*/
-
-
+:root {
+  --font-family: "Poppins", sans-serif;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --border-color: #ddd;
+  --primary-color: #0c41ff;
+  --event-purple: #b19cd9;
+  --event-green: #a0d995;
+  --sidebar-width: 250px;
+  --padding-small: 5px;
+  --padding-medium: 10px;
+  --padding-large: 15px;
+  --border-radius: 5px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+}
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  color: #333;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .container {
@@ -21,16 +33,16 @@ body {
 }
 
 .sidebar {
-  width: 250px;
-  background: #ffffff;
-  padding: 15px;
-  border-right: 1px solid #ddd;
+  width: var(--sidebar-width);
+  background: var(--bg-color);
+  padding: var(--padding-large);
+  border-right: 1px solid var(--border-color);
 }
 
 .mini-calendar h3 {
   text-align: center;
-  margin-bottom: 10px;
-  font-weight: 500;
+  margin-bottom: var(--padding-medium);
+  font-weight: var(--font-weight-medium);
 }
 
 table {
@@ -41,85 +53,85 @@ table {
 
 th,
 td {
-  padding: 5px;
+  padding: var(--padding-small);
 }
 
 .event-list h4 {
   margin-top: 20px;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 .event {
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 5px;
+  padding: var(--padding-medium);
+  margin: var(--padding-small) 0;
+  border-radius: var(--border-radius);
   text-align: center;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   color: white;
 }
 
 .purple {
-  background: #b19cd9;
+  background: var(--event-purple);
 }
 
 .green {
-  background: #a0d995;
+  background: var(--event-green);
 }
 
 .calendar {
   flex: 1;
-  padding: 20px;
+  padding: var(--padding-large);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: var(--padding-large);
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 select {
-  padding: 8px;
-  border: 2px solid #0c41ff;
-  border-radius: 5px;
-  background: #ffffff;
-  font-weight: 500;
-  color: #0c41ff;
+  padding: var(--padding-medium);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-color);
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color);
   cursor: pointer;
 }
 
 .add-event {
-  background: #0c41ff;
+  background: var(--primary-color);
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: var(--padding-medium) var(--padding-large);
   cursor: pointer;
-  border-radius: 5px;
-  font-weight: 500;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-medium);
 }
 
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+  gap: var(--padding-small);
 }
 
 .day {
   padding: 20px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   position: relative;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .day.event {
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   color: black;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: var(--border-radius);
+  padding: var(--padding-medium);
 }
