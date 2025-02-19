@@ -1,3 +1,13 @@
+/*
+ik denk persoonlijk dat je je event tegen de tijdlijn wil laten lopen om duidelijk te zien wanneer het begint
+en eindigd, op deze manier is het minder leesbaar,
+vooral wanneer er meerdere events zijn
+
+als je een ruimte wil laten maak het veel kleiner dat er enkel een lijntje tussen hangt
+TODO: event over heel de beschikbare breedte
+TODO: haal overbodige variables weg, je hebt er meerdere niet gebruikt
+TODO: */
+
 :root {
     /* Backgrounds */
     --background-color: #f4f4f4;
