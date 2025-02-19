@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="/css/weekview.css" />
 
 
 <!DOCTYPE html>
@@ -98,18 +98,26 @@ maar de comments die er boven staan niet, zo kan je veel duidelijker je code ove
             <button class="add-event">Event Toevoegen</button>
         </header>
 
-        <section class="calendar-grid">
-            <section class="parent-week">
-                <div class="weekday" class="mo">monday</div>
-                <div class="weekday" class="tue">tuesday</div>
-                <div class="weekday" class="wed">wednesday</div>
-                <div class="weekday" class="thu">thursday</div>
-                <div class="weekday" class="fri">friday</div>
-                <div class="weekday" class="sat">saturday</div>
-                <div class="weekday" class="sun">sunday</div>
-            </section>
+        
+            <div class="calendar-div">
+                <div class="cellheader"></div>
+                <script>
+                    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+                    days.forEach(day => {
+                        document.write(`<div class='cell header'>${day}</div>`);
+                    });
+                    
+                    for (let hour = 0; hour < 24; hour++) {
+                        document.write(`<div class='cellhour'>${hour}:00</div>`);
+                        days.forEach(() => {
+                            document.write("<div class='cell'></div>");
+                        });
+                    }
+                </script>
+            </div>
+          
             
-        </section>
+      
     </section>
 </section>
 </body>
