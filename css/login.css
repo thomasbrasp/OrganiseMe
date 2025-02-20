@@ -20,7 +20,12 @@ html, body {
           background-position: 0% 50%;
       }
   }
-
+  @keyframes text-color {
+    0% {color: #ffffff;}
+    50% {color: #0C41FF;}
+    100% {color: #ffffff;
+  }
+}
   .card {
     background: linear-gradient(-45deg, #ffffff, #ffffff, #6c8cff, #6c8cff);
     background-size: 400% 400%;
@@ -43,5 +48,8 @@ html, body {
     font-weight: bold;
   }
   #h3{
-   color: #0C41FF;
+   
+   
+   animation-duration: 15s;
+   animation: text-color 15s ease infinite;
   }
