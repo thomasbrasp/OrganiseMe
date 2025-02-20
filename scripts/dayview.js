@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Helper function to format date
+    // function to format date
     const formatDate = (date) =>
         date.toLocaleDateString("nl-BE", {
             weekday: "long",
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dateHeading.textContent = formatDate(currentDate);
     };
 
-    // Create Top Bar
+    // Top Bar
     const header = document.createElement("div");
     header.className = "calendar-header";
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     header.append(dateHeading, controls);
     calendarContainer.appendChild(header);
 
-    // Create Calendar
+    // Calendar
     const calendar = document.createElement("div");
     calendar.className = "calendar";
 
