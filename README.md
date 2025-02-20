@@ -9,6 +9,7 @@
 - eerste opdrachten mergen en nieuwe verdelen
 - dailystandup inplannen
 - duidelijke mappenstructuur uitleggen/afspreken
+- lege regel
 
 # drupal (stackexchange) bekijken voor SSESS
 
