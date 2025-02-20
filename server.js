@@ -10,7 +10,7 @@ const fetchAllSchedules = async (res) => {
         const headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            "Cookie": "SSESSa871973c0cd6049896447a5dd7c92d4f=nqb%2CKfB3atQkUVWTyR7%2CvWJI34t%2C9DYw0RUaMzSIgjFDKQal",
+            "Cookie": "SSESSa871973c0cd6049896447a5dd7c92d4f=WqN6HE7xzUXVeK8J1xPZPRT2u9N10aS48fSNegdsmP1vwL9l",
             "Origin": "https://student.ap.be",
             "Referer": "https://student.ap.be/events",
             "Sec-Fetch-Dest": "empty",
@@ -27,6 +27,12 @@ const fetchAllSchedules = async (res) => {
             const response = await axios.get(url, { headers });
             scheduleData[month] = response.data;
         }
+
+        //TODO: import crypto voor hash, unieke id
+        //TODO: schrijf de opvang indien er een update gedaan moet worden
+        //TODO: geef feedback wanneer de update klaar is en benoem de items die eventueel geupdate zijn
+
+        console.log(scheduleData);
 
         // Save the data to a JSON file
         const filePath = path.join(__dirname, "data/scheduleData.json");
