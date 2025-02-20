@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/* TODO: Sidebar should be toggleable in the future */
-
 :root {
   --font-family: "Poppins", sans-serif;
   --bg-color: #ffffff;
@@ -11,13 +9,11 @@
   --event-purple: #b19cd9;
   --event-green: #a0d995;
   --sidebar-width: 250px;
-  --padding-small: 5px;
-  --padding-medium: 10px;
-  --padding-large: 15px;
-  --border-radius: 5px;
-  --font-weight-light: 300;
+  --padding-small: 8px;
+  --padding-medium: 12px;
+  --padding-large: 18px;
+  --border-radius: 6px;
   --font-weight-regular: 400;
-  --font-weight-medium: 500;
   --font-weight-bold: 600;
 }
 
@@ -36,11 +32,17 @@ body {
 
 .container {
   display: flex;
-  height: 90vh;
+  flex-direction: row;
+  height: 95vh;
   width: 90vw;
   max-width: 1200px;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
+/* Sidebar */
 .sidebar {
   width: var(--sidebar-width);
   background: var(--bg-color);
@@ -49,50 +51,33 @@ body {
   overflow-y: auto;
 }
 
-.mini-calendar h3 {
+.sidebar h3 {
   text-align: center;
-  margin-bottom: var(--padding-medium);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
 }
 
-table {
+.mini-calendar table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
 }
 
-th,
-td {
+.mini-calendar th,
+.mini-calendar td {
   padding: var(--padding-small);
+  border: 1px solid var(--border-color);
 }
 
-.event-list h4 {
-  margin-top: 20px;
+.today-btn {
+  display: block;
+  text-align: center;
+  margin-top: var(--padding-medium);
+  text-decoration: none;
+  color: var(--primary-color);
   font-weight: var(--font-weight-bold);
 }
 
-.event {
-  padding: var(--padding-medium);
-  margin: var(--padding-small) 0;
-  border-radius: var(--border-radius);
-  text-align: center;
-  font-size: 14px;
-  font-weight: var(--font-weight-medium);
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-}
-
-.purple {
-  background: var(--event-purple);
-}
-
-.green {
-  background: var(--event-green);
-}
-
+/* Main Calendar */
 .calendar {
   flex: 1;
   padding: var(--padding-large);
@@ -104,7 +89,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--padding-large);
+  margin-bottom: var(--padding-medium);
 }
 
 h2 {
@@ -112,11 +97,11 @@ h2 {
 }
 
 select {
-  padding: var(--padding-medium);
+  padding: var(--padding-small);
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   background: var(--bg-color);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   color: var(--primary-color);
   cursor: pointer;
 }
@@ -125,68 +110,71 @@ select {
   background: var(--primary-color);
   color: white;
   border: none;
-  padding: var(--padding-medium) var(--padding-large);
+  padding: var(--padding-medium);
   cursor: pointer;
   border-radius: var(--border-radius);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
 }
 
+/* Calendar Grid */
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: var(--padding-small);
   flex-grow: 1;
-  max-height: calc(100% - 50px);
+  overflow-y: auto;
+  height: 100%;
 }
 
 .day {
-  padding: 15px;
   text-align: center;
   border: 1px solid var(--border-color);
-  position: relative;
-  font-weight: var(--font-weight-medium);
-  min-height: 80px;
+  font-weight: var(--font-weight-bold);
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 100px;
-}
-
-.day.event {
-  font-weight: var(--font-weight-bold);
-  color: black;
-  height: 500px;
+  background: var(--bg-color);
   border-radius: var(--border-radius);
-  padding: var(--padding-medium);
+  font-size: 14px;
 }
 
-.day .event-title {
-  max-width: 100%;
+.day .event {
+  padding: var(--padding-small);
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
 }
 
+.purple {
+  background: var(--event-purple);
+}
+.green {
+  background: var(--event-green);
+}
+
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
     height: auto;
   }
-
   .sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
   }
-
   .calendar-grid {
     grid-template-columns: repeat(7, minmax(40px, 1fr));
   }
-
   .day {
-    min-height: 60px;
+    min-height: 80px;
     font-size: 12px;
   }
 }
@@ -195,18 +183,25 @@ select {
   .calendar-grid {
     grid-template-columns: repeat(7, minmax(30px, 1fr));
   }
-
   .day {
-    min-height: 50px;
+    min-height: 60px;
     font-size: 10px;
-    padding: var(--padding-small);
   }
-
   .add-event {
     padding: var(--padding-small) var(--padding-medium);
   }
+}
 
+@media (max-width: 480px) {
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(25px, 1fr));
+  }
+  .day {
+    min-height: 50px;
+    font-size: 9px;
+  }
+  .add-event,
   select {
-    padding: var(--padding-small);
+    font-size: 12px;
   }
 }
