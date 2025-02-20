@@ -24,7 +24,7 @@ const fetchAllSchedules = async (res) => {
 
         for (const month of months) {
             const url = `https://student.ap.be/events/fetch/untis/2025/${month.toString().padStart(2, '0')}`;
-            const response = await axios.get(url, { headers });
+            const response = await axios.get(url, {headers});
             scheduleData[month] = response.data;
         }
 
@@ -40,7 +40,7 @@ const fetchAllSchedules = async (res) => {
 
         console.log("Schedule data saved to scheduleData.json");
 
-        res.json({ message: "Schedule data saved successfully", data: scheduleData });
+        res.json({message: "Schedule data saved successfully", data: scheduleData});
     } catch (error) {
         console.error("Error fetching schedules:", error.response ? error.response.data : error.message);
         res.status(500).send("Error fetching schedules");
