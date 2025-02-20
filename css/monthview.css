@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/* TODO: Fixed height and width for events so all days are the same size */
 /* TODO: Sidebar should be toggleable in the future */
 
 :root {
@@ -152,11 +151,13 @@ select {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  height: 100px;
 }
 
 .day.event {
   font-weight: var(--font-weight-bold);
   color: black;
+  height: 500px;
   border-radius: var(--border-radius);
   padding: var(--padding-medium);
 }

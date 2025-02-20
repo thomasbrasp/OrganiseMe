@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalender</title>
     <link rel="stylesheet" href="../css/monthview.css">
+    <link rel="stylesheetmini" href="../css/minicalendar.css">
 </head>
 
 <!-- ik (thomas) heb even uw elementen de juiste sluit gegeven zodat de errors uit de code zijn. Ik heb niets verbeterd enkel vervolledigd.
@@ -16,123 +17,135 @@ maar de comments die er boven staan niet, zo kan je veel duidelijker je code ove
 
 <body>
 
-<section class="container">
+    <section class="container">
 
-    <aside class="sidebar">
-        <div class="mini-calendar">
-            <h3>Februari 2025</h3>
-            <table>
-                <tr>
-                    <th>M</th>
-                    <th>D</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>V</th>
-                    <th>Z</th>
-                    <th>Z</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>01</td>
-                    <td>02</td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>04</td>
-                    <td>05</td>
-                    <td>06</td>
-                    <td>07</td>
-                    <td>08</td>
-                    <td>09</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                </tr>
-            </table>
-        </div>
-
-        <section class="event-list">
-            <h4>Evenementen</h4>
-            <div class="event purple">Test Event <br> 12u-14u</div>
-            <div class="event green">Test Event <br> 12u-14u</div>
-            </div> </section>
-    </aside>
-
-    <section class="calendar">
-        <header>
-            <h2>Februari 2025</h2>
-            <select>
-                <option>Maand</option>
-                <option>Week</option>
-                <option>Dag</option>
-            </select>
-            <button class="add-event">Event Toevoegen</button>
-        </header>
-
-        <section class="calendar-grid">
-
-            <div class="day">01</div>
-            <div class="day">02
-                <div class="day event green">Test Event <br> 12u-14u</div>
+        <aside class="sidebar">
+            <div class="calendar">
+                <div class="month">
+                    <span class="arrow">&#9665;</span>
+                    <span>MEI 2025</span>
+                    <span class="arrow">&#9655;</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MA</th>
+                            <th>DI</th>
+                            <th>WO</th>
+                            <th>DO</th>
+                            <th>VR</th>
+                            <th>ZA</th>
+                            <th>ZO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="grayed">5</td>
+                            <td class="grayed">6</td>
+                            <td class="grayed">7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="grayed">12</td>
+                            <td class="grayed">13</td>
+                            <td class="grayed">14</td>
+                            <td class="grayed">15</td>
+                            <td>16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td class="grayed">19</td>
+                            <td class="grayed">20</td>
+                            <td class="grayed">21</td>
+                            <td class="grayed">22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td class="grayed">26</td>
+                            <td class="grayed">27</td>
+                            <td class="grayed">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="today">Ga naar vandaag</a>
             </div>
-            <div class="day">03</div>
-            <div class="day">04</div>
-            <div class="day">05</div>
-            <div class="day">06</div>
-            <div class="day">07</div>
-            <div class="day">08
-                <div class="day event purple">Test Event <br> 12u-14u</div>
-            </div>
-            </sec>
-            <div class="day">09</div>
-            <div class="day">10</div>
-            <div class="day">11</div>
-            <div class="day">12</div>
-            <div class="day">13</div>
-            <div class="day">14</div>
-            <div class="day">15</div>
-            <div class="day">16</div>
-            <div class="day">17</div>
-            <div class="day">18</div>
-            <div class="day">19</div>
-            <div class="day">20</div>
-            <div class="day">21</div>
-            <div class="day">22</div>
-            <div class="day">23</div>
-            <div class="day">24</div>
-            <div class="day">25</div>
-            <div class="day">26</div>
-            <div class="day">27</div>
-            <div class="day">28</div>
+
+            <section class="event-list">
+                <h4>Evenementen</h4>
+                <div class="event purple">Test Event <br> 12u-14u</div>
+                <div class="event green">Test Event <br> 12u-14u</div>
+                </div>
+            </section>
+        </aside>
+
+        <section class="calendar">
+            <header>
+                <h2>Februari 2025</h2>
+                <select>
+                    <option>Maand</option>
+                    <option>Week</option>
+                    <option>Dag</option>
+                </select>
+                <button class="add-event">Event Toevoegen</button>
+            </header>
+
+            <section class="calendar-grid">
+
+                <div class="day">01</div>
+                <div class="day">02
+                    <div class="day event green">Test Event <br> 12u-14u</div>
+                </div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08
+                    <div class="day event purple">Test Event <br> 12u-14u</div>
+                </div>
+                </sec>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+            </section>
         </section>
     </section>
-</section>
 </body>
 
 </html>
