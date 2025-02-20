@@ -10,45 +10,31 @@ geen kleurecodes -> drop down menu  DONE
 titel moet boven description DONE
 verwijder get notification (idee bewaren) zet hier description in de plaats VERDER UITWERKEN IPV VERWIJDEREN
 typen voor begin uur en eind uur en dan datum selecteren DONE */
-/* 
-.event-pop-up-container {
-  display: flex;
-  border: 1px solid black;
-  max-width: 375px;
-  min-height: 720px;
-}
-label {
-  margin-left: 5px;
-  display: block;
-}
-input,
-select {
-  margin-left: 10px;
-  margin-top: 5px;
-}
-.event-pop-up-divider {
-  margin-left: 5px;
-  margin-top: 5px;
-}
-.subtext {
-  color: lightgrey;
-  font-size: 10px;
-  padding-left: 20px;
-} */
-:root {
-  /*container variables*/
-  --container-background-color: white;
 
+:root {
+  --container-shadow: rgba(151, 65, 252, 1) 0 15px 30px -5px;
+  --container-background-color: white;
+  --container-background-image: linear-gradient(
+    144deg,
+    #af40ff,
+    #5b42f3 50%,
+    #007bff
+  );
+  input,
+  select {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
   --container-padding-size: 20px;
   --container-border-radius: 10px;
   --container-width: 400px;
-  /* --font-family: Poppins; */
+  --font-family: Poppins;
   --font-color: black;
   --font-weight: 600;
   --font-size: 14px;
   --font-size-subtext: 12px;
   --input-color: black;
-  --input-background-color: ;
+  --input-background-color: lineargrad;
   --input-background-color-hover: ;
   --input-border-color: #ccc;
   --input-border-radius: 5px;
@@ -56,10 +42,11 @@ select {
   --divider-margin-bottom: 15px;
   --label-margin-bottom: 5px;
   --input-select-focus-color: #007bff;
-  --subtext-color: #888;
+  --subtext-color: #021822;
   --subtext-margin-top: 3px;
   --submit-button-hover: #0056b3;
-  /**/
+  --closeBtn-background-color: #007bff;
+  --closeBtn-background-color-hover: rgb(240, 240, 240);
 }
 body {
   font-family: "poppins", "sans serif";
@@ -72,10 +59,10 @@ body {
 }
 
 .event-pop-up-container {
-  background: var(--container-background-color);
+  background: var(--container-background-image);
   padding: var(--container-padding-size);
   border-radius: var(--container-border-radius);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--container-shadow);
   width: var(--container-width);
 }
 
@@ -147,4 +134,18 @@ input[type="submit"]:hover {
 }
 .time-input {
   width: 154px;
+}
+.popUp-CloseBtn {
+  background-color: var(--closeBtn-background-color);
+  border-radius: 10px;
+  font-family: "poppins", "sans serif";
+  color: var(--font-color);
+  display: block;
+  position: relative;
+  float: inline-end;
+  padding: 5px 20px;
+  margin-bottom: 15px;
+}
+.popUp-CloseBtn:hover {
+  background-color: var(--closeBtn-background-color-hover);
 }
