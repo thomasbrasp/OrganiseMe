@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     controls.className = "controls";
 
     const viewSelect = document.createElement("select");
-    ["day", "week", "month"].forEach(view => {
+    ["dag", "week", "maand"].forEach(view => {
         const option = document.createElement("option");
         option.value = view;
         option.textContent = view;
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const searchInput = document.createElement("input");
     searchInput.type = "text";
-    searchInput.placeholder = "🔍";
+    searchInput.placeholder = "zoeken";
 
     const addButton = document.createElement("button");
     addButton.className = "add-event";
