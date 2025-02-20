@@ -30,7 +30,7 @@ html, body {
     background-color: #39ff43;
   }
   #fpsw{
-    color: #ff1f1f;
+    color: #00b109;
   }
   #topbrand {
     color: #0C41FF;
@@ -39,9 +39,13 @@ html, body {
     text-decoration: none;
     color: #ffffff;
   }
-  label{
-    font-weight: bold;
+  .select {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
-  #h3{
-   color: #0C41FF;
-  }
+label {
+  font-weight: bold;
+}
+#h3 {
+    color: #0C41FF;
+}
