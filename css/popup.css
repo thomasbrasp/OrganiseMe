@@ -1,15 +1,15 @@
 /*
 TODO: mobile first niet omgekeerd
-TODO: alle waarden omzetten naar variables zoals afgesproken
+TODO: alle waarden omzetten naar variables zoals afgesproken (CSS IN VARIABLES ZETTEN)
 TODO: am (ochtend of avond) fixen, die moet je nu manueel typen, voorstel: doe het met dropdown
 TODO: standaard event niet op urgent zetten
 TODO: bedenk het concept van notification eens uit en kijk of we er een API voor kunnen gebruiken*/
 
-/* standaard niet op urgent zetten
-geen kleurecodes -> drop down menu 
-titel moet boven description
-verwijder get notification (idee bewaren) zet hier description in de plaats
-typen voor begin uur en eind uur en dan datum selecteren */
+/* standaard niet op urgent zetten DONE
+geen kleurecodes -> drop down menu  DONE
+titel moet boven description DONE
+verwijder get notification (idee bewaren) zet hier description in de plaats VERDER UITWERKEN IPV VERWIJDEREN
+typen voor begin uur en eind uur en dan datum selecteren DONE */
 /* 
 .event-pop-up-container {
   display: flex;
@@ -35,8 +35,34 @@ select {
   font-size: 10px;
   padding-left: 20px;
 } */
+:root {
+  /*container variables*/
+  --container-background-color: white;
+
+  --container-padding-size: 20px;
+  --container-border-radius: 10px;
+  --container-width: 400px;
+  /* --font-family: Poppins; */
+  --font-color: black;
+  --font-weight: 600;
+  --font-size: 14px;
+  --font-size-subtext: 12px;
+  --input-color: black;
+  --input-background-color: ;
+  --input-background-color-hover: ;
+  --input-border-color: #ccc;
+  --input-border-radius: 5px;
+  --input-padding: 8px;
+  --divider-margin-bottom: 15px;
+  --label-margin-bottom: 5px;
+  --input-select-focus-color: #007bff;
+  --subtext-color: #888;
+  --subtext-margin-top: 3px;
+  --submit-button-hover: #0056b3;
+  /**/
+}
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", "sans serif";
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -46,11 +72,11 @@ body {
 }
 
 .event-pop-up-container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  background: var(--container-background-color);
+  padding: var(--container-padding-size);
+  border-radius: var(--container-border-radius);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  width: 400px;
+  width: var(--container-width);
 }
 
 .container {
@@ -59,58 +85,66 @@ body {
 }
 
 .event-pop-up-divider {
-  margin-bottom: 15px;
+  margin-bottom: var(--divider-margin-bottom);
+  /* display: flexbox; */
 }
 
 label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 5px;
+  font-weight: var(--font-weight);
+  /* display: block; */
+  margin-bottom: var(--label-margin-bottom);
 }
 
 input,
 select {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+  padding: var(--input-padding);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  font-size: var(--font-size);
 }
 
 input:focus,
 select:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--input-select-focus-color);
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .subtext {
-  font-size: 12px;
-  color: #888;
-  margin-top: 3px;
+  font-size: var(--font-size-subtext);
+  color: var(--subtext-color);
+  margin-top: var(--subtext-margin-top);
 }
 
 input[type="submit"] {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--input-select-focus-color);
+  color: var(--container-background-color);
   border: none;
-  padding: 10px;
-  font-size: 16px;
+  padding: var(--container-padding-size);
+  font-size: 1;
   cursor: pointer;
   border-radius: 5px;
 }
 
 input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: var(--submit-button-hover);
 }
 
 .color-options {
   display: flex;
   flex-direction: column;
 }
-
-@media (max-width: 500px) {
-  .event-pop-up-container {
-    width: 90%;
-  }
+.vertical-event-layout {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.event-pop-up-small-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.time-input {
+  width: 154px;
 }

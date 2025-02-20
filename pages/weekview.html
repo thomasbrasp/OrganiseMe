@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="/css/weekview.css" />
+
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="../css/monthview.css">
+</head>
+
+<!-- ik (thomas) heb even uw elementen de juiste sluit gegeven zodat de errors uit de code zijn. Ik heb niets verbeterd enkel vervolledigd.
+TODO: duidelijke comments toevoegen wat welk stukje code doet
+ik begrijp dat je niet veel met comments werkt, maar doe het toch, want elk groepje elementen dat je minimaliseert is verborgen,
+maar de comments die er boven staan niet, zo kan je veel duidelijker je code overzichtelijk bekijken, zelfs al is alles vanzelfsprekend..-->
+
+
+<body>
+
+<section class="container">
+
+    <aside class="sidebar">
+        <div class="mini-calendar">
+            <h3>Februari 2025</h3>
+            <table>
+                <tr>
+                    <th>M</th>
+                    <th>D</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>V</th>
+                    <th>Z</th>
+                    <th>Z</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>01</td>
+                    <td>02</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+            </table>
+        </div>
+
+        <section class="event-list">
+            <h4>Evenementen</h4>
+            <div class="event purple">Test Event <br> 12u-14u</div>
+            <div class="event green">Test Event <br> 12u-14u</div>
+            </div> </section>
+    </aside>
+
+    <section class="calendar">
+        <header>
+            <h2>Februari 2025</h2>
+            <select>
+                <option>Week</option>
+                <option>Maand</option>
+                <option>Dag</option>
+            </select>
+            <button class="add-event">Event Toevoegen</button>
+        </header>
+
+        
+            <div class="calendar-div">
+                <div class="cellheader"></div>
+                <script>
+                    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+                    days.forEach(day => {
+                        document.write(`<div class='cell header'>${day}</div>`);
+                    });
+                    
+                    for (let hour = 0; hour < 24; hour++) {
+                        document.write(`<div class='cellhour'>${hour}:00</div>`);
+                        days.forEach(() => {
+                            document.write("<div class='cell'></div>");
+                        });
+                    }
+                </script>
+            </div>
+          
+            
+      
+    </section>
+</section>
+</body>
+
+</html>
