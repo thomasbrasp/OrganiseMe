@@ -1,22 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
     const calendarContainer = document.getElementById("calendarContainer");
+    if (!calendarContainer) {
+        console.error("#calendarContainer niet gevonden.");
+        return;
+    }
 
-    // Date Formatting
-    const formatDate = (date) => date.toLocaleDateString("nl-BE", { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    // Helper function to format date
+    const formatDate = (date) =>
+        date.toLocaleDateString("nl-BE", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+        });
 
-    // Create and configure the top bar with date heading and controls
+    let currentDate = new Date();
+
+    const updateDateHeading = () => {
+        dateHeading.textContent = formatDate(currentDate);
+    };
+
+    // Create Top Bar
     const header = document.createElement("div");
     header.className = "calendar-header";
 
     const dateHeading = document.createElement("h2");
-    const currentDate = new Date();
-    dateHeading.textContent = formatDate(currentDate);
+    updateDateHeading();
 
     const controls = document.createElement("div");
     controls.className = "controls";
 
+    const previousDayButton = document.createElement("button");
+    previousDayButton.textContent = "← Vorige dag";
+    previousDayButton.addEventListener("click", () => {
+        currentDate.setDate(currentDate.getDate() - 1);
+        updateDateHeading();
+    });
+
+    const nextDayButton = document.createElement("button");
+    nextDayButton.textContent = "Volgende dag →";
+    nextDayButton.addEventListener("click", () => {
+        currentDate.setDate(currentDate.getDate() + 1);
+        updateDateHeading();
+    });
+
     const viewSelect = document.createElement("select");
-    ["dag", "week", "maand"].forEach(view => {
+    const viewOptions = ["dag", "week", "maand"];
+    viewOptions.forEach((view) => {
         const option = document.createElement("option");
         option.value = view;
         option.textContent = view;
@@ -25,13 +55,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const searchInput = document.createElement("input");
     searchInput.type = "text";
-    searchInput.placeholder = "zoeken";
+    searchInput.placeholder = "Zoek";
 
-    const addButton = document.createElement("button");
-    addButton.className = "add-event";
-    addButton.textContent = "Event Toevoegen";
+    const addEventButton = document.createElement("button");
+    addEventButton.className = "add-event";
+    addEventButton.textContent = "Evenement toevoegen";
 
-    controls.append(viewSelect, searchInput, addButton);
+    addEventButton.addEventListener("click", () => {
+        const popupScript = document.createElement("script");
+        popupScript.src = "popup.js";
+        popupScript.onload = () => console.log("popup.js geladen.");
+        document.body.appendChild(popupScript);
+    });
+
+    controls.append(previousDayButton, nextDayButton, viewSelect, searchInput, addEventButton);
     header.append(dateHeading, controls);
     calendarContainer.appendChild(header);
 
@@ -41,23 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const hoursDiv = document.createElement("div");
     hoursDiv.className = "hours";
+
     for (let i = 0; i <= 23; i++) {
         const hour = document.createElement("div");
         hour.className = "hour";
-        hour.textContent = i.toString().padStart(2, "0");
+        hour.textContent = `${i.toString().padStart(2, "0")}:00`;
         hoursDiv.appendChild(hour);
     }
 
     const eventsDiv = document.createElement("div");
     eventsDiv.className = "events";
 
-    // Event Handling
-    const events = [];
-
-
-
-    // Initial Render
     calendar.append(hoursDiv, eventsDiv);
     calendarContainer.appendChild(calendar);
-    renderEvents();
 });
