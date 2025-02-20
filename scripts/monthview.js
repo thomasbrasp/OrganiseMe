@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
     calendarDiv.appendChild(todayLink);
     sidebar.appendChild(calendarDiv);
 
+    // Event List in Sidebar
+    const eventList = document.createElement("div");
+    eventList.className = "event-list";
+    sidebar.appendChild(eventList);
+
     // Main Calendar View
     const mainCalendar = document.createElement("section");
     mainCalendar.className = "calendar";
@@ -67,12 +72,18 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentMonth = currentDate.getMonth();
     let currentYear = currentDate.getFullYear();
 
+    let events = [
+        { day: 2, title: "Test Event", time: "12u-14u", color: "green" },
+        { day: 8, title: "Meeting", time: "10u-11u", color: "purple" }
+    ];
+
     function updateCalendar() {
         monthTitle.textContent = new Intl.DateTimeFormat("nl-NL", { month: "long", year: "numeric" }).format(new Date(currentYear, currentMonth));
         header.querySelector("h2").textContent = monthTitle.textContent;
 
         tbody.innerHTML = ""; // Clear previous table
         calendarGrid.innerHTML = ""; // Clear grid
+        eventList.innerHTML = "<h3>Aankomende evenementen</h3>"; // Clear sidebar events
 
         let firstDay = new Date(currentYear, currentMonth, 1).getDay();
         let daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
@@ -104,12 +115,19 @@ document.addEventListener("DOMContentLoaded", function () {
             dayDiv.className = "day";
             dayDiv.textContent = i;
 
-            if (i === 2 || i === 8) {
-                let eventDiv = document.createElement("div");
-                eventDiv.className = `event ${i === 2 ? "green" : "purple"}`;
-                eventDiv.innerHTML = "Test Event <br> 12u-14u";
-                dayDiv.appendChild(eventDiv);
-            }
+            events.forEach(event => {
+                if (event.day === i) {
+                    let eventDiv = document.createElement("div");
+                    eventDiv.className = `event ${event.color}`;
+                    eventDiv.innerHTML = `${event.title} <br> ${event.time}`;
+                    dayDiv.appendChild(eventDiv);
+
+                    let eventSidebarItem = document.createElement("div");
+                    eventSidebarItem.className = `event-sidebar ${event.color}`;
+                    eventSidebarItem.innerHTML = `<strong>${event.title}</strong> - ${event.time} (Dag ${event.day})`;
+                    eventList.appendChild(eventSidebarItem);
+                }
+            });
 
             calendarGrid.appendChild(dayDiv);
         }
