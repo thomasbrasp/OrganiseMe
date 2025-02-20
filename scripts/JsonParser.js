@@ -19,6 +19,7 @@ const parseDescription = (description) => {
 };
 
 // Go up one level from 'scripts/' and into 'data/'
+//__dirname, takes over the root folder of the project, the path in string is relative to the folder where the script is located
 const filePath = path.resolve(__dirname, "../data/scheduleData.json");
 const outputFilePath = path.resolve(__dirname, "../data/transformed.json");
 
