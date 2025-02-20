@@ -1,151 +1,16 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalender</title>
+    <title>Monthview</title>
     <link rel="stylesheet" href="../css/monthview.css">
-    <link rel="stylesheetmini" href="../css/minicalendar.css">
 </head>
 
-<!-- ik (thomas) heb even uw elementen de juiste sluit gegeven zodat de errors uit de code zijn. Ik heb niets verbeterd enkel vervolledigd.
-TODO: duidelijke comments toevoegen wat welk stukje code doet
-ik begrijp dat je niet veel met comments werkt, maar doe het toch, want elk groepje elementen dat je minimaliseert is verborgen,
-maar de comments die er boven staan niet, zo kan je veel duidelijker je code overzichtelijk bekijken, zelfs al is alles vanzelfsprekend..-->
-
-
 <body>
+    <script src="../scripts/monthview.js"></script>
 
-    <section class="container">
-
-        <aside class="sidebar">
-            <div class="calendar">
-                <div class="month">
-                    <span class="arrow">&#9665;</span>
-                    <span>MEI 2025</span>
-                    <span class="arrow">&#9655;</span>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>MA</th>
-                            <th>DI</th>
-                            <th>WO</th>
-                            <th>DO</th>
-                            <th>VR</th>
-                            <th>ZA</th>
-                            <th>ZO</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td class="grayed">5</td>
-                            <td class="grayed">6</td>
-                            <td class="grayed">7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td class="grayed">12</td>
-                            <td class="grayed">13</td>
-                            <td class="grayed">14</td>
-                            <td class="grayed">15</td>
-                            <td>16</td>
-                            <td>17</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td class="grayed">19</td>
-                            <td class="grayed">20</td>
-                            <td class="grayed">21</td>
-                            <td class="grayed">22</td>
-                            <td>23</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td class="grayed">26</td>
-                            <td class="grayed">27</td>
-                            <td class="grayed">28</td>
-                            <td>29</td>
-                            <td>30</td>
-                            <td>31</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="#" class="today">Ga naar vandaag</a>
-            </div>
-
-            <section class="event-list">
-                <h4>Evenementen</h4>
-                <div class="event purple">Test Event <br> 12u-14u</div>
-                <div class="event green">Test Event <br> 12u-14u</div>
-                </div>
-            </section>
-        </aside>
-
-        <section class="calendar">
-            <header>
-                <h2>Februari 2025</h2>
-                <select>
-                    <option>Maand</option>
-                    <option>Week</option>
-                    <option>Dag</option>
-                </select>
-                <button class="add-event">Event Toevoegen</button>
-            </header>
-
-            <section class="calendar-grid">
-
-                <div class="day">01</div>
-                <div class="day">02
-                    <div class="day event green">Test Event <br> 12u-14u</div>
-                </div>
-                <div class="day">03</div>
-                <div class="day">04</div>
-                <div class="day">05</div>
-                <div class="day">06</div>
-                <div class="day">07</div>
-                <div class="day">08
-                    <div class="day event purple">Test Event <br> 12u-14u</div>
-                </div>
-                </sec>
-                <div class="day">09</div>
-                <div class="day">10</div>
-                <div class="day">11</div>
-                <div class="day">12</div>
-                <div class="day">13</div>
-                <div class="day">14</div>
-                <div class="day">15</div>
-                <div class="day">16</div>
-                <div class="day">17</div>
-                <div class="day">18</div>
-                <div class="day">19</div>
-                <div class="day">20</div>
-                <div class="day">21</div>
-                <div class="day">22</div>
-                <div class="day">23</div>
-                <div class="day">24</div>
-                <div class="day">25</div>
-                <div class="day">26</div>
-                <div class="day">27</div>
-                <div class="day">28</div>
-            </section>
-        </section>
-    </section>
 </body>
 
 </html>
