@@ -62,11 +62,35 @@ document.addEventListener("DOMContentLoaded", () => {
     addEventButton.textContent = "Evenement toevoegen";
 
     addEventButton.addEventListener("click", () => {
-        const popupScript = document.createElement("script");
-        popupScript.src = "popup.js";
-        popupScript.onload = () => console.log("popup.js geladen.");
-        document.body.appendChild(popupScript);
+        const eventTitle = prompt("Voer de naam van het evenement in:");
+        if (!eventTitle) return;
+
+        const eventStartHour = parseInt(prompt("Voer het startuur in (0-23):"), 10);
+        const eventDuration = parseInt(prompt("Voer de duur in uren in:"), 10);
+
+        if (
+            isNaN(eventStartHour) ||
+            eventStartHour < 0 ||
+            eventStartHour > 23 ||
+            isNaN(eventDuration) ||
+            eventDuration <= 0
+        ) {
+            alert("Ongeldige invoer. Probeer opnieuw.");
+            return;
+        }
+
+        const eventsDiv = document.querySelector(".events");
+        if (!eventsDiv) return;
+
+        const eventDiv = document.createElement("div");
+        eventDiv.className = "event event-green";
+        eventDiv.textContent = eventTitle;
+        eventDiv.style.top = `${eventStartHour * 2}em`;
+        eventDiv.style.height = `${eventDuration * 2}em`;
+
+        eventsDiv.appendChild(eventDiv);
     });
+
 
     controls.append(previousDayButton, nextDayButton, viewSelect, searchInput, addEventButton);
     header.append(dateHeading, controls);
