@@ -43,6 +43,7 @@ TODO: Mobile first aanpassingen
     --font-sm: 12px;
     --font-md: 14px;
     --font-lg: 16px;
+    --font-xl: 20px;
 }
 
 body {
@@ -159,4 +160,28 @@ body {
 
 .event-purple {
     background: var(--event-purple);
+}
+
+/* media queries */
+@media (min-width: 600px) {
+    .calendar_header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .calendar {
+        grid-template-columns: 50px 1fr;
+        height: 700px;
+    }
+
+    .calendar_header h2 { font-size: var(--font-xl); }
+    .hour { font-size: var(--font-sm); }
+    .event { font-size: var(--font-md); }
+}
+
+@media (min-width: 900px) {
+    .container { max-width: 800px; }
+    .hour { line-height: 30px; }
+    .event { font-size: var(--font-lg); }
 }
