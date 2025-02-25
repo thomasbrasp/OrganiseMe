@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         eventDiv.style.height = `${eventDuration * 2}em`;
 
         eventsDiv.appendChild(eventDiv);
-    });
+    }); // TODO: Jalan zijn popup compatibel maken met deze functie.
 
 
     controls.append(previousDayButton, nextDayButton, viewSelect, searchInput, addEventButton);

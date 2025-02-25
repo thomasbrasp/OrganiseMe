@@ -40,10 +40,10 @@ TODO: Mobile first aanpassingen
     --radius-lg: 15px;
 
     /* Font Sizes */
-    --font-sm: 12px;
-    --font-md: 14px;
-    --font-lg: 16px;
-    --font-xl: 20px;
+    --font-sm: 0.75rem;
+    --font-md: 0.875rem;
+    --font-lg: 1rem;
+    --font-xl: 1.25rem;
 }
 
 body {
@@ -58,9 +58,9 @@ body {
 .container-Dayview {
     width: 1000px;
     background: var(--container-bg);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-sm);
     box-shadow: 0 4px 10px var(--container-shadow);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* Top menu */
@@ -104,10 +104,12 @@ body {
     font-size: var(--font-md);
     border-radius: var(--radius-sm);
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .add-event:hover {
     background: var(--button-hover-bg);
+    transform: scale(1.05);
 }
 
 /* Calendar */
@@ -122,7 +124,7 @@ body {
 /* Hour column */
 .hours {
     display: grid;
-    grid-template-rows: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 0.9fr);
     background: var(--hour-bg);
     text-align: center;
     font-size: var(--font-sm);
@@ -131,8 +133,8 @@ body {
 }
 
 .hour {
-    height: 30px;
-    line-height: 30px;
+    height: 20px;
+    line-height: 20px;
     border-bottom: 1px solid var(--control-border);
 }
 
@@ -163,8 +165,8 @@ body {
 }
 
 /* media queries */
-@media (min-width: 600px) {
-    .calendar_header {
+@media (min-width: 480px) {
+    .calendar-header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -172,16 +174,43 @@ body {
 
     .calendar {
         grid-template-columns: 50px 1fr;
-        height: 700px;
+        height: 600px;
     }
 
-    .calendar_header h2 { font-size: var(--font-xl); }
-    .hour { font-size: var(--font-sm); }
+    .calendar-header h2 { font-size: var(--font-lg); }
+    .hour { font-size: var(--font-md); }
     .event { font-size: var(--font-md); }
 }
 
-@media (min-width: 900px) {
-    .container { max-width: 800px; }
-    .hour { line-height: 30px; }
+@media (min-width: 768px) {
+    .calendar {
+        height: 700px;
+    }
+
+    .calendar-header h2 { font-size: var(--font-xl); }
+    .hour { font-size: var(--font-lg); }
     .event { font-size: var(--font-lg); }
 }
+
+@media (min-width: 1024px) {
+    .container-Dayview { max-width: 1000px; }
+    .hour { line-height: 30px; }
+    .event { font-size: var(--font-xl); }
+}
+@media (min-width: 480px) {
+    .calendar-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .calendar {
+        grid-template-columns: 50px 1fr;
+        height: 600px;
+    }
+
+    .calendar-header h2 { font-size: var(--font-lg); }
+    .hour { font-size: var(--font-md); }
+    .event { font-size: var(--font-md); }
+}
+
