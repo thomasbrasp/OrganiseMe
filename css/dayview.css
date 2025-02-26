@@ -60,7 +60,7 @@ body {
     background: var(--container-bg);
     border-radius: var(--radius-sm);
     box-shadow: 0 4px 10px var(--container-shadow);
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /* Top menu */
