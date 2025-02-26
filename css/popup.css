@@ -44,8 +44,13 @@ typen voor begin uur en eind uur en dan datum selecteren DONE */
 body {
   font-family: "poppins", "sans serif";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   font-family: "poppins", "sans serif";
   background-color: rgba(0, 0, 0, 0.5);
+=======
+  background:var(--container-background-image);
+  animation: gradient 15s ease infinite;
+>>>>>>> Stashed changes
 =======
   background:var(--container-background-image);
   animation: gradient 15s ease infinite;
