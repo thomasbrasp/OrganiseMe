@@ -2,87 +2,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/popup.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="poppins.css" />
+    <link rel="stylesheet" href="../css/poppins.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
     <title>Test event pupup</title>
+    <script src="../scripts/popup.js" defer></script>
   </head>
   <body>
-    <div class="event-pop-up-container">
-      <div class="container">
-        <form action="get">
-          <!-- Event title -->
-          <div class="event-pop-up-divider">
-            <label for="">Event title</label>
-            <input type="text" />
-          </div>
-          <!-- Event description -->
-          <div class="event-pop-up-divider">
-            <label for="description">Event description </label>
-            <input type="text" id="description" name="description" size="25" maxlength="45" />
-            <div class="subtext">Max 45 characters*</div>
-          </div>
-          <!-- Date picker -->
-          <div class="event-pop-up-divider">
-            <label for="Date"> Date</label>
-            <input type="date" name="Event datum" id="DateTime" />
-          </div>
-          <!-- From-To-Time selector -->
-          <div class="event-pop-up-divider event-pop-up-small-row">
-            <div class="vertical-event-layout">
-              <label for="start-time" class="event-row-label">Start time</label>
-              <input name="start-time" type="time" class="time-input" />
-            </div>
-
-            <div class="vertical-event-layout">
-              <label for="end-time">End time</label>
-              <input name="end-time" type="time" class="time-input" />
-            </div>
-          </div>
-          <!-- Event urgency picker -->
-          <div class="event-pop-up-divider">
-            <label for="Event-Urgency">Event Urgency</label>
-            <select name="Event-Urgency" id="Event-Urgency">
-              <option value="Urgent">Urgent</option>
-
-              <option value="Mildly-Urgent">Mildly urgent</option>
-
-              <option value="Not-Urgent" selected>Not urgent</option>
-            </select>
-          </div>
-          <!-- Event color picker -->
-          <div class="event-pop-up-divider">
-            <div class="color-options">
-              <label>Choose an event</label>
-              <select name="" id="">
-                <option value="Deadline">Deadline</option>
-                <option value="Exam">Exam</option>
-                <option value="Study">Study session</option>
-                <option value="Class">Class</option>
-              </select>
-            </div>
-            <input type="hidden" name="selected-color" id="selected-color" />
-            <!-- <option value="Red">Red</option>
-
-              <option value="Green">Green</option>
-
-              <option value="Blue">Blue</option>
-              <option value="Purple">Purple</option>
-              <option value="Orange">Orange</option> -->
-          </div>
-          <!-- Email Notification -->
-          <div class="event-pop-up-divider">
-            <label for="E-mail">Get a notification</label>
-            <input type="email" name="E-mail" />
-          </div>
-          <input type="submit" />
-        </form>
-      </div>
-    </div>
+    <button id="open-popUp"></button>
   </body>
 </html>
