@@ -1,0 +1,97 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --primary-color: #0c41ff;
+    --event-purple: #b19cd9;
+    --event-green: #a0d995;
+    --sidebar-width: 250px;
+    --padding-small: 5px;
+    --padding-medium: 10px;
+    --padding-large: 15px;
+    --border-radius: 5px;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+
+    /*  minicalendar, dont change sizes*/
+    --card-bg-color: white;
+    --card-padding: 5px;
+    --card-border-radius: 8px;
+    --card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    --text-color-link: red;
+    --font-size: 18px;
+    --table-width: 100%;
+    --table-cell-height: 30px;
+    --cell-width: 15%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+}
+
+/*minicalendar*/
+div#mini-calendar {
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0;
+
+
+    .miniCalendar-container {
+        width: 250px;
+        background: var(--card-bg-color);
+        padding: var(--padding-small);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--card-shadow);
+        text-align: center;
+    }
+
+    .miniCalendar-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--font-size);
+        font-weight: bold;
+        color: var(--text-color-link);
+        padding: 5px 0;
+    }
+
+    .miniCalendar-arrow {
+        cursor: pointer;
+    }
+
+    table {
+        width: var(--table-width);
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 0;
+        width: var(--cell-width);
+        height: var(--table-cell-height); /* Ensures equal cell height */
+        text-align: center;
+    }
+
+    thead, tbody tr {
+        display: table;
+        width: 100%;
+    }
+
+    #miniCalendar-todayBtn {
+        color: var(--text-color-link);
+        margin-top: 5px;
+        display: block;
+        text-decoration: none;
+    }
+}

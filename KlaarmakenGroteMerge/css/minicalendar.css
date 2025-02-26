@@ -1,0 +1,57 @@
+/*minicalendar*/
+section#mini-calendar {
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0;
+
+
+    .miniCalendar-container {
+        width: 250px;
+        background: var(--card-bg-color);
+        padding: var(--padding-small);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--card-shadow);
+        text-align: center;
+    }
+
+    .miniCalendar-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--font-size);
+        font-weight: bold;
+        color: var(--text-color-link);
+        padding: 5px 0;
+    }
+
+    .miniCalendar-arrow {
+        cursor: pointer;
+    }
+
+    table {
+        width: var(--table-width);
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 0;
+        width: var(--cell-width);
+        height: var(--table-cell-height); /* Ensures equal cell height */
+        text-align: center;
+    }
+
+    thead, tbody tr {
+        display: table;
+        width: 100%;
+    }
+    #miniCalendar-todayBtn {
+        color: var(--text-color-link);
+        margin-top: 5px;
+        display: block;
+        text-decoration: none;
+    }
+}

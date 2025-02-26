@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.calendar-div {
+  display: grid;
+  grid-template-columns: repeat(8, 0.5fr);
+  grid-template-rows: repeat(25, 0.2fr);
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  padding-bottom: 10rem;
+  padding-right: 5rem;
+}
+.cell {
+  margin: 0.1rem;
+  background-color: #d4d4d4;
+
+  padding: 5px;
+  text-align: center;
+}
+.header {
+  font-weight: bold;
+  background-color: white;
+}
+.cellhour {
+  background-color: white;
+  text-align: right;
+}
+

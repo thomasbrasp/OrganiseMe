@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* TODO: Sidebar should be toggleable in the future */
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --border-color: #ddd;
+  --primary-color: #0c41ff;
+  --event-purple: #b19cd9;
+  --event-green: #a0d995;
+  --sidebar-width: 250px;
+  --padding-small: 5px;
+  --padding-medium: 10px;
+  --padding-large: 15px;
+  --border-radius: 5px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+/*  minicalendar, dont change sizes*/
+  --card-bg-color: white;
+  --card-padding: 5px;
+  --card-border-radius: 8px;
+  --card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  --text-color-link: red;
+  --font-size: 18px;
+  --table-width: 100%;
+  --table-cell-height: 30px;
+  --cell-width: 15%;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  max-width: 1200px;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--bg-color);
+  padding: var(--padding-large);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.mini-calendar h3 {
+  text-align: center;
+  margin-bottom: var(--padding-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: var(--padding-small);
+}
+
+.event-list h4 {
+  margin-top: 20px;
+  font-weight: var(--font-weight-bold);
+}
+
+.event {
+  padding: var(--padding-medium);
+  margin: var(--padding-small) 0;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.purple {
+  background: var(--event-purple);
+}
+
+.green {
+  background: var(--event-green);
+}
+
+.calendar {
+  flex: 1;
+  padding: var(--padding-large);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--padding-large);
+}
+
+h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+select {
+  padding: var(--padding-medium);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-color);
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.add-event {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: var(--padding-medium) var(--padding-large);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-medium);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--padding-small);
+  flex-grow: 1;
+  max-height: calc(100% - 50px);
+}
+
+.day {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  position: relative;
+  font-weight: var(--font-weight-medium);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100px;
+}
+
+.day.event {
+  font-weight: var(--font-weight-bold);
+  color: black;
+  height: 500px;
+  border-radius: var(--border-radius);
+  padding: var(--padding-medium);
+}
+
+.day .event-title {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+  }
+
+  .day {
+    min-height: 60px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+  }
+
+  .day {
+    min-height: 50px;
+    font-size: 10px;
+    padding: var(--padding-small);
+  }
+
+  .add-event {
+    padding: var(--padding-small) var(--padding-medium);
+  }
+
+  select {
+    padding: var(--padding-small);
+  }
+}
