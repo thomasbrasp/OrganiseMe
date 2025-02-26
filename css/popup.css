@@ -15,17 +15,9 @@ typen voor begin uur en eind uur en dan datum selecteren DONE */
 :root {
   --container-shadow: rgba(151, 65, 252, 1) 0 15px 30px -5px;
   --container-background-color: white;
-  --container-background-image: linear-gradient(
-    144deg,
-    #af40ff,
-    #5b42f3 50%,
-    #007bff
-  );
-  input,
-  select {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
+  --container-background-image:linear-gradient(-45deg, #0C41FF, #0C41FF, #ffffff, #ffffff);
+  --backgroun-size-popUp:  background-size: 400% 400%;
+  --background-animation: gradient 15s ease infinite;
   --container-padding-size: 20px;
   --container-border-radius: 10px;
   --container-width: 400px;
@@ -51,13 +43,19 @@ typen voor begin uur en eind uur en dan datum selecteren DONE */
 }
 body {
   font-family: "poppins", "sans serif";
+<<<<<<< Updated upstream
   font-family: "poppins", "sans serif";
   background-color: rgba(0, 0, 0, 0.5);
+=======
+  background:var(--container-background-image);
+  animation: gradient 15s ease infinite;
+>>>>>>> Stashed changes
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-size:var(--backgroun-size-popUp)
 }
 
 .event-pop-up-container {
@@ -66,6 +64,7 @@ body {
   border-radius: var(--container-border-radius);
   box-shadow: var(--container-shadow);
   width: var(--container-width);
+  animation: gradient 15s ease infinite;
 }
 
 .container {
@@ -168,4 +167,17 @@ input[type="submit"]:hover {
 }
 .popUp-CloseBtn:hover {
   background-color: var(--closeBtn-background-color-hover);
+}
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
