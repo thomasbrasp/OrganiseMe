@@ -1,6 +1,7 @@
 /*
 TODO: mobile first niet omgekeerd
 TODO: alle waarden omzetten naar variables zoals afgesproken (CSS IN VARIABLES ZETTEN)
+TODO: alle waarden omzetten naar variables zoals afgesproken (CSS IN VARIABLES ZETTEN)
 TODO: am (ochtend of avond) fixen, die moet je nu manueel typen, voorstel: doe het met dropdown
 TODO: standaard event niet op urgent zetten
 TODO: bedenk het concept van notification eens uit en kijk of we er een API voor kunnen gebruiken*/
@@ -50,6 +51,7 @@ typen voor begin uur en eind uur en dan datum selecteren DONE */
 }
 body {
   font-family: "poppins", "sans serif";
+  font-family: "poppins", "sans serif";
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -74,9 +76,14 @@ body {
 .event-pop-up-divider {
   margin-bottom: var(--divider-margin-bottom);
   /* display: flexbox; */
+  margin-bottom: var(--divider-margin-bottom);
+  /* display: flexbox; */
 }
 
 label {
+  font-weight: var(--font-weight);
+  /* display: block; */
+  margin-bottom: var(--label-margin-bottom);
   font-weight: var(--font-weight);
   /* display: block; */
   margin-bottom: var(--label-margin-bottom);
@@ -89,11 +96,16 @@ select {
   border: 1px solid var(--input-border-color);
   border-radius: var(--input-border-radius);
   font-size: var(--font-size);
+  padding: var(--input-padding);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  font-size: var(--font-size);
 }
 
 input:focus,
 select:focus {
   outline: none;
+  border-color: var(--input-select-focus-color);
   border-color: var(--input-select-focus-color);
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
@@ -102,12 +114,19 @@ select:focus {
   font-size: var(--font-size-subtext);
   color: var(--subtext-color);
   margin-top: var(--subtext-margin-top);
+  font-size: var(--font-size-subtext);
+  color: var(--subtext-color);
+  margin-top: var(--subtext-margin-top);
 }
 
 input[type="submit"] {
   background-color: var(--input-select-focus-color);
   color: var(--container-background-color);
+  background-color: var(--input-select-focus-color);
+  color: var(--container-background-color);
   border: none;
+  padding: var(--container-padding-size);
+  font-size: 1;
   padding: var(--container-padding-size);
   font-size: 1;
   cursor: pointer;
@@ -115,6 +134,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+  background-color: var(--submit-button-hover);
   background-color: var(--submit-button-hover);
 }
 

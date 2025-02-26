@@ -1,125 +1,207 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/*
-TODO: css omzetten met variables
-TODO: fixed height en width op events zodat alle dagen even groot zijn (met of zonder event)
-TODO: naar toekomst toe moet de sidebar togglebaar zijn*/
-
-
+:root {
+  --font-family: "Poppins", sans-serif;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --border-color: #ddd;
+  --primary-color: #0c41ff;
+  --event-purple: #b19cd9;
+  --event-green: #a0d995;
+  --sidebar-width: 250px;
+  --padding-small: 8px;
+  --padding-medium: 12px;
+  --padding-large: 18px;
+  --border-radius: 6px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  color: #333;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  flex-direction: row;
+  height: 95vh;
+  width: 90vw;
+  max-width: 1200px;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
+/* Sidebar */
 .sidebar {
-  width: 250px;
-  background: #ffffff;
-  padding: 15px;
-  border-right: 1px solid #ddd;
+  width: var(--sidebar-width);
+  background: var(--bg-color);
+  padding: var(--padding-large);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
 }
 
-.mini-calendar h3 {
+.sidebar h3 {
   text-align: center;
-  margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: var(--font-weight-bold);
 }
 
-table {
+.mini-calendar table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
 }
 
-th,
-td {
-  padding: 5px;
+.mini-calendar th,
+.mini-calendar td {
+  padding: var(--padding-small);
+  border: 1px solid var(--border-color);
 }
 
-.event-list h4 {
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.event {
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 5px;
+.today-btn {
+  display: block;
   text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
+  margin-top: var(--padding-medium);
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
 }
 
-.purple {
-  background: #b19cd9;
-}
-
-.green {
-  background: #a0d995;
-}
-
+/* Main Calendar */
 .calendar {
   flex: 1;
-  padding: 20px;
+  padding: var(--padding-large);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: var(--padding-medium);
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 select {
-  padding: 8px;
-  border: 2px solid #0c41ff;
-  border-radius: 5px;
-  background: #ffffff;
-  font-weight: 500;
-  color: #0c41ff;
+  padding: var(--padding-small);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-color);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
   cursor: pointer;
 }
 
 .add-event {
-  background: #0c41ff;
+  background: var(--primary-color);
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: var(--padding-medium);
   cursor: pointer;
-  border-radius: 5px;
-  font-weight: 500;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-bold);
 }
 
+/* Calendar Grid */
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+  gap: var(--padding-small);
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .day {
-  padding: 20px;
   text-align: center;
-  border: 1px solid #ddd;
-  position: relative;
-  font-weight: 500;
+  border: 1px solid var(--border-color);
+  font-weight: var(--font-weight-bold);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
 }
 
-.day.event {
-  font-weight: bold;
-  color: black;
-  border-radius: 5px;
-  padding: 10px;
+.day .event {
+  padding: var(--padding-small);
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.purple {
+  background: var(--event-purple);
+}
+.green {
+  background: var(--event-green);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+  }
+  .day {
+    min-height: 80px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+  }
+  .day {
+    min-height: 60px;
+    font-size: 10px;
+  }
+  .add-event {
+    padding: var(--padding-small) var(--padding-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(25px, 1fr));
+  }
+  .day {
+    min-height: 50px;
+    font-size: 9px;
+  }
+  .add-event,
+  select {
+    font-size: 12px;
+  }
 }
